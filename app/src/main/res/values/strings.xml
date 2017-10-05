@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Continental++</string>
+    <string name="baraja">¡Prepara tus barajas!</string>
+    <string name="hoy">¿Cuántos van a jugar hoy?</string>
+    <string name="jugadores">Número de jugadores: </string>
+    <string name="njugadores">Escribe el nombre de los jugadores:</string>
+    <string name="start">Empezar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="ronda1">RONDA 1</string>
+    <string name="objetivo">Objetivo: Dos Tríos</string>
+    <string name="reparte">Reparte: 7 cartas</string>
+    <string name="fin">FIN DEL JUEGO</string>
+    <string name="volver">Nueva Partida</string>
+    <string name="aboutTitle">Diseñadores de la App</string>
+    <string name="volverApp">Volver al Inicio</string>
+    <string name="players">Jugadores</string>
+    <string name="points">Puntos</string>
+    <string name="total">Total</string>
+    <string name="obj1">Objetivo: Una Escalera y un Trío</string>
+    <string name="obj2">Objetivo: Dos Escaleras</string>
+    <string name="obj3">Objetivo: Tres Tríos</string>
+    <string name="obj4">Objetivo: Dos tríos y una Escalera</string>
+    <string name="obj5">Objetivo: Dos Escaleras y un Trío</string>
+    <string name="obj6">Objetivo: Tres Escaleras</string>
+    <string name="email">Enviar Email</string>
+</resources>

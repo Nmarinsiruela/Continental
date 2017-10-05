@@ -1,0 +1,153 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/introbackground"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="?attr/colorPrimary"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:layout_centerHorizontal="true"/>
+        </android.support.v7.widget.Toolbar>
+
+        <!-- The main content view -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            >
+
+            <RelativeLayout
+                android:id="@+id/mainText"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/backrel_layout"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="90sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baraja"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textbaraja"
+                    android:layout_marginTop="40sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hoy"
+                    android:textSize="20sp"
+                    android:paddingTop="10sp"
+                    android:padding="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/textbaraja"
+                    android:id="@+id/texthoy" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/texthoy"
+                    android:layout_marginBottom="20sp"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jugadores"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/textnumjugadores"
+                        android:layout_gravity="bottom"
+                        android:labelFor="@+id/numeroJugadores"
+                        />
+
+                    <EditText
+                        android:id="@+id/numeroJugadores"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="0dp"
+
+
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                android:text="@string/start"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="62dp"
+                android:layout_below="@id/mainText"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <!--<Button-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="Force Crash!"-->
+                <!--android:onClick="forceCrash"-->
+                <!--android:layout_alignParentBottom="true" />-->
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <!-- The navigation drawer -->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerPane"
+        android:layout_gravity="start"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+
+        <!-- List of Actions (pages) -->
+        <ListView
+            android:id="@+id/navList"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:background="#ffffffff"
+            />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

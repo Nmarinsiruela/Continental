@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="?attr/colorPrimary"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/AppTheme">
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:layout_centerHorizontal="true"/>
+        </android.support.v7.widget.Toolbar>
+
+    <nmarin.eite.com.continentalplus.NonSwipeableViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonGame"
+        android:layout_below="@+id/my_awesome_toolbar"
+        />
+
+    <ImageButton
+        android:id="@+id/left_nav"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_chevron_left_black_24dp"/>
+
+    <ImageButton
+        android:id="@+id/right_nav"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_chevron_right_black_24dp" />
+
+
+    <Button
+        android:id="@+id/buttonGame"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="@string/volverApp"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+       />
+
+</RelativeLayout>
